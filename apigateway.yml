@@ -1,3 +1,6 @@
+spring:
+    application:
+        name: apigateway
 zuul:
     prefix: /aplicativos
     routes:
