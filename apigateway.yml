@@ -4,7 +4,8 @@ zuul:
         autenticacion-apigateway:
             serviceId: autenticacion
             path: /autenticacion/**
-    sensitive-headers=
+
+sensitive-headers=
 add-proxy-headers=true
 
 # Increase the Hystrix timeout to 60s (globally)
