@@ -6,7 +6,7 @@ zuul:
             path: /autenticacion/**
 
 sensitive-headers=
-add-proxy-headers=true
+add-proxy-headers: true
 
 # Increase the Hystrix timeout to 60s (globally)
 hystrix:
