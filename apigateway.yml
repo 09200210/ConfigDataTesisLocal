@@ -4,8 +4,7 @@ spring:
 zuul:
     prefix: /aplicativos
     routes:
-        autenticacion-apigateway:
-            serviceId: autenticacion
+        autenticacion:
             path: /autenticacion/**
 
 sensitive-headers=
