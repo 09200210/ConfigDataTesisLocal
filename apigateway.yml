@@ -6,6 +6,8 @@ zuul:
     routes:
         autenticacion:
             path: /autenticacion/**
+        periodo-academico-service:
+            path: /periodo-academico/**
     sensitive-headers:
     add-proxy-headers: true
 
