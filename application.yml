@@ -2,4 +2,8 @@
 security:
   oauth2:
     client:
+      access-token-uri: /autenticacion/oauth/token
+      user-authorization-uri: /autenticacion/oauth/authorize
+      client-id: sgca
+      client-secret: sgca_secret
       user-info-uri: http://localhost:8013/user
