@@ -29,5 +29,5 @@ feign:
 
 #Ribbon Configuration
 ribbon:
-  ConnectTimeout: 30000
-  ReadTimeout: 30000
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
