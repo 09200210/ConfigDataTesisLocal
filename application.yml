@@ -1,9 +1,10 @@
 #OAuth Authentication
 security:
   oauth2:
-    client:
-      access-token-uri: /autenticacion/oauth/token
-      user-authorization-uri: /autenticacion/oauth/authorize
-      client-id: sgca
-      client-secret: sgca_secret
+    #client:
+      #access-token-uri: /autenticacion/oauth/token
+      #user-authorization-uri: /autenticacion/oauth/authorize
+      #client-id: sgca
+      #client-secret: sgca_secret
+    resource:
       user-info-uri: http://localhost:8013/user
