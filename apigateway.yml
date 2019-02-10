@@ -29,5 +29,7 @@ feign:
 
 #Ribbon Configuration
 ribbon:
+  eureka:
+    enable: true
   ConnectTimeout: 10000
   ReadTimeout: 10000
