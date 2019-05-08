@@ -3,13 +3,6 @@ spring:
         name: apigateway
 zuul:
     prefix: /aplicativos
-    routes:
-        autenticacion:
-            path: /autenticacion/**
-        periodo-academico-service:
-            path: /periodo-academico-service/**
-        asistencia-service:
-            path: /asistencia-service/**    
     sensitive-headers:
     add-proxy-headers: true
 
