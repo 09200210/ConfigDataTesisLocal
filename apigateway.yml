@@ -3,7 +3,6 @@ spring:
         name: apigateway
 zuul:
     prefix: /aplicativos
-feign: 
     routes:
             autenticacion:
                 path: /autenticacion/**
@@ -11,8 +10,7 @@ feign:
                 path: /periodo-academico-service/**
             asistencia-service:
                 path: /asistencia-service/**
-    hystrix:
-        enabled: true
+
 # Increase the Hystrix timeout to 60s (globally)
 hystrix:
     command:
@@ -24,6 +22,9 @@ hystrix:
                 timeout:
                     enabled: false
     shareSecurityContext: true
+feign:
+    hystrix:
+        enabled: true
 #Ribbon Configuration
 ribbon:
   eureka:
