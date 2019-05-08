@@ -4,14 +4,13 @@ spring:
 zuul:
     prefix: /aplicativos
     routes:
-            autenticacion:
-                path: /autenticacion/**
-            periodo-academico-service:
-                path: /periodo-academico-service/**
-            asistencia-service:
-                path: /asistencia-service/**
-	sensitive-headers: 
+        autenticacion:
+            path: /autenticacion/**
+        periodo-academico-service:
+            path: /periodo-academico/**
+    sensitive-headers:
     add-proxy-headers: true
+
 # Increase the Hystrix timeout to 60s (globally)
 hystrix:
     command:
@@ -23,9 +22,11 @@ hystrix:
                 timeout:
                     enabled: false
     shareSecurityContext: true
-feign:
+
+feign: 
     hystrix:
         enabled: true
+
 #Ribbon Configuration
 ribbon:
   eureka:
