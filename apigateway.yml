@@ -10,7 +10,8 @@ zuul:
                 path: /periodo-academico-service/**
             asistencia-service:
                 path: /asistencia-service/**
-
+			sensitive-headers:
+			add-proxy-headers: true
 # Increase the Hystrix timeout to 60s (globally)
 hystrix:
     command:
