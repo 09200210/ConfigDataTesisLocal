@@ -4,6 +4,13 @@ spring:
 zuul:
     prefix: /aplicativos
 feign: 
+    routes:
+            autenticacion:
+                path: /autenticacion/**
+            periodo-academico-service:
+                path: /periodo-academico-service/**
+            asistencia-service:
+                path: /asistencia-service/**
     hystrix:
         enabled: true
 # Increase the Hystrix timeout to 60s (globally)
