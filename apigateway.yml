@@ -6,6 +6,17 @@ zuul:
 feign: 
     hystrix:
         enabled: true
+# Increase the Hystrix timeout to 60s (globally)
+hystrix:
+    command:
+        default: 
+            execution: 
+                isolation:
+                    thread: 
+                        timeoutInMilliseconds: 60000
+                timeout:
+                    enabled: false
+    shareSecurityContext: true
 #Ribbon Configuration
 ribbon:
   eureka:
