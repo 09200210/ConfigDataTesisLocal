@@ -1,7 +1,0 @@
-spring:
-    application:
-        name: apigateway
-zuul:
-    prefix: /aplicativos
-    sensitive-headers:
-    add-proxy-headers: true
