@@ -3,3 +3,13 @@ security:
   oauth2:
     resource:
       user-info-uri: http://localhost:8013/user
+
+eureka:
+  client:
+        serviceUrl:
+            defaultZone: http://${CONFIG_SERVER_URL}:8761/eureka/
+        registerWithEureka: false
+        fetchRegistry: false
+#        registryFetchIntervalSeconds : 8
+#  server:
+#    response-cache-update-interval-ms: 5000
