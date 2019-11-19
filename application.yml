@@ -3,17 +3,3 @@ security:
   oauth2:
     resource:
       user-info-uri: http://localhost:8013/user
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://${CONFIG_SERVER_URL}:8761/eureka/
-    register-with-eureka: false
-    fetch-registry: false
-  instance:
-    #Eureka uses hostname by default.
-    prefer-ip-address: true
-    ip-address: ${CONFIG_SERVER_URL}
-    hostname: ${CONFIG_SERVER_URL}
-#        registryFetchIntervalSeconds : 8
-#  server:
-#    response-cache-update-interval-ms: 5000
